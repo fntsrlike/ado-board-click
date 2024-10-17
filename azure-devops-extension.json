@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "ado-board-click",
     "publisher": "fntsr",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "name": "Board Click",
     "description": "Azure DevOps Extension",
     "categories": [

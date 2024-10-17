@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.099">
-  <testsuite name="Always Pass Test" errors="0" failures="0" skipped="0" timestamp="2024-10-17T17:20:28" time="0.064" tests="1">
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="0.098">
+  <testsuite name="Always Pass Test" errors="0" failures="0" skipped="0" timestamp="2024-10-17T23:54:34" time="0.064" tests="1">
     <testcase classname="Always Pass Test should always pass" name="Always Pass Test should always pass" time="0.001">
     </testcase>
   </testsuite>
