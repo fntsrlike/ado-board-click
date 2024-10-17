@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CircularDependencyPlugin = require("circular-dependency-plugin");
 
 module.exports = {
     entry: "./src/index.js",
@@ -15,10 +16,14 @@ module.exports = {
     },
     module: {
         rules: [
-            
+
         ]
     },
     plugins: [
-        new CopyWebpackPlugin([ { from: "**/*.html", context: "src/" }])
+        new CopyWebpackPlugin([ { from: "**/*.html", context: "src/" }]),
+        new CircularDependencyPlugin({
+            exclude: /node_modules/,
+            failOnError: true,
+          }),
     ]
 };

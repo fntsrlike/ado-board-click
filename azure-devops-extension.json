@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "ado-board-click",
     "publisher": "fntsr",
-    "version": "1.0.0",
+    "version": "1.0.4",
     "name": "Board Click",
     "description": "Azure DevOps Extension",
     "categories": [
@@ -25,6 +25,24 @@
         {
             "path": "dist",
             "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "backlog-item-menu",
+            "type": "ms.vss-web.action",
+            "targets": [
+                "ms.vss-work-web.backlog-item-menu"
+            ],
+            "properties": {
+                "text": "Custom backlog item action",
+                "uri": "dist/backlog-item-menu/backlog-item-menu.html",
+                "icon": {
+                    "light": "static/asterisk.png",
+                    "dark": "static/asterisk.png"
+                },
+                "registeredObjectId": "sample-backlog-item-menu"
+            }
         }
     ]
 }
